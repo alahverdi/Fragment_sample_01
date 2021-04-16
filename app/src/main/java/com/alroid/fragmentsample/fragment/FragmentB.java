@@ -46,7 +46,7 @@ public class FragmentB extends Fragment implements AdapterItem.selectedItem {
 
     private void setupRecyclerViewItemsB() {
         AdapterItem adapter = new AdapterItem(getActivity(), DataGenerator.getItemsB(getActivity()), this);
-        rv_b.setLayoutManager(new GridLayoutManager(getActivity(), 2, RecyclerView.HORIZONTAL, false));
+        rv_b.setLayoutManager(new GridLayoutManager(getActivity(), 1, RecyclerView.HORIZONTAL, false));
         rv_b.setAdapter(adapter);
     }
 
