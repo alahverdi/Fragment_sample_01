@@ -1,9 +1,13 @@
 package com.alroid.fragmentsample;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.alroid.fragmentsample.fragment.FragmentA;
@@ -49,4 +53,29 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
             fragmentResult.setIdC(id);
         }
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        menu.add(1, 1, 1, "reset");
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case 1:
+                FragmentManager manager = getSupportFragmentManager();
+                FragmentResult fragmentResult = (FragmentResult) manager.findFragmentById(R.id.fragment_result);
+                if (fragmentResult != null) {
+                    fragmentResult.resetFragmentResult();
+                }
+
+                Toast msg = Toast.makeText(MainActivity.this, "reset", Toast.LENGTH_LONG);
+                msg.show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 }
