@@ -46,4 +46,43 @@ public class DataGenerator {
         }
         return items;
     }
+
+
+    public static List<Item> getItemsB(Context context) {
+        List<Item> items = new ArrayList<>();
+
+        for (int i = 0; i < 8; i++) {
+            Item item = new Item();
+            item.setId(i);
+            switch (i) {
+                case 0 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 1 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 2 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 3 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 4 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 5 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 6 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+                case 7 :
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    break;
+            }
+            items.add(item);
+        }
+        return items;
+    }
+
 }

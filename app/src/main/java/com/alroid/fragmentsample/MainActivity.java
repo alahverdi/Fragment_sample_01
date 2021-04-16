@@ -7,9 +7,10 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.alroid.fragmentsample.fragment.FragmentA;
+import com.alroid.fragmentsample.fragment.FragmentB;
 import com.alroid.fragmentsample.fragment.FragmentResult;
 
-public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPassA {
+public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPassA, FragmentB.OnIdPassB {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,18 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
 
         FragmentManager manager = getSupportFragmentManager();
         FragmentResult fragmentResult = (FragmentResult) manager.findFragmentById(R.id.fragment_result);
-        fragmentResult.setIdA(id);
+        if (fragmentResult != null) {
+            fragmentResult.setIdA(id);
+        }
+    }
+
+
+    @Override
+    public void OnIdPassB(int id) {
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentResult fragmentResult = (FragmentResult) manager.findFragmentById(R.id.fragment_result);
+        if (fragmentResult != null) {
+            fragmentResult.setIdB(id);
+        }
     }
 }

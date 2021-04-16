@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.alroid.fragmentsample.Const;
@@ -35,6 +33,12 @@ public class FragmentResult extends Fragment {
         }
     }
 
+    public void setIdB(int id_b) {
+        if (id_b == 0) {
+            iv_b.setImageResource(R.drawable.ic_launcher_background);
+        }
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,11 +46,6 @@ public class FragmentResult extends Fragment {
         iv_a = view.findViewById(R.id.iv_a);
         iv_b = view.findViewById(R.id.iv_b);
         iv_c = view.findViewById(R.id.iv_c);
-
-        if (getArguments() != null && getArguments().containsKey(Const.KEY_ID)) {
-            int id_a = getArguments().getInt(Const.KEY_ID);
-        }
-
 
         return view;
     }
