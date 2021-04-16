@@ -39,6 +39,12 @@ public class FragmentResult extends Fragment {
         }
     }
 
+    public void setIdC(int id_c) {
+        if (id_c == 0) {
+            iv_c.setImageResource(R.drawable.ic_launcher_background);
+        }
+    }
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

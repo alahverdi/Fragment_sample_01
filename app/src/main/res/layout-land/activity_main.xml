@@ -27,15 +27,13 @@
             android:layout_weight="1"
             tools:layout="@layout/fragment_b" />
 
-        <!--
-                <fragment
-                    android:id="@+id/fragment_c"
-                    android:name="com.alroid.fragmentsample.fragment.FragmentC"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    tools:layout="@layout/fragment_c" />
-        -->
+        <fragment
+            android:id="@+id/fragment_c"
+            android:name="com.alroid.fragmentsample.fragment.FragmentC"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_c" />
 
     </LinearLayout>
 
