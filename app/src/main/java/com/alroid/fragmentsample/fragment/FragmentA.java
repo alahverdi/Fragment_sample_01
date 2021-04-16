@@ -1,5 +1,6 @@
 package com.alroid.fragmentsample.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +13,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.alroid.fragmentsample.Const;
 import com.alroid.fragmentsample.DataGenerator;
 import com.alroid.fragmentsample.R;
 import com.alroid.fragmentsample.adapter.AdapterItem;
@@ -19,6 +21,8 @@ import com.alroid.fragmentsample.entity.Item;
 
 public class FragmentA extends Fragment implements AdapterItem.selectedItem {
     RecyclerView rv_a;
+    int id = 0;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -38,31 +42,36 @@ public class FragmentA extends Fragment implements AdapterItem.selectedItem {
 
     @Override
     public void selectedItem(Item item) {
-        switch (item.getId()) {
-            case 0 :
+        id = item.getId();
+       /* switch (item.getId()) {
+            case 0:
                 Toast.makeText(getActivity(), "0", Toast.LENGTH_SHORT).show();
                 break;
-            case 1 :
+            case 1:
                 Toast.makeText(getActivity(), "1", Toast.LENGTH_SHORT).show();
                 break;
-            case 2 :
+            case 2:
                 Toast.makeText(getActivity(), "2", Toast.LENGTH_SHORT).show();
                 break;
-            case 3 :
+            case 3:
                 Toast.makeText(getActivity(), "3", Toast.LENGTH_SHORT).show();
                 break;
-            case 4 :
+            case 4:
                 Toast.makeText(getActivity(), "4", Toast.LENGTH_SHORT).show();
                 break;
-            case 5 :
+            case 5:
                 Toast.makeText(getActivity(), "5", Toast.LENGTH_SHORT).show();
                 break;
-            case 6 :
+            case 6:
                 Toast.makeText(getActivity(), "6", Toast.LENGTH_SHORT).show();
                 break;
-            case 7 :
+            case 7:
                 Toast.makeText(getActivity(), "7", Toast.LENGTH_SHORT).show();
                 break;
-        }
+        }*/
+    }
+
+    public int getItemId() {
+        return id;
     }
 }
