@@ -38,6 +38,31 @@ public class FragmentA extends Fragment implements AdapterItem.selectedItem {
 
     @Override
     public void selectedItem(Item item) {
-        Toast.makeText(getActivity(), "hi", Toast.LENGTH_SHORT).show();
+        switch (item.getId()) {
+            case 0 :
+                Toast.makeText(getActivity(), "0", Toast.LENGTH_SHORT).show();
+                break;
+            case 1 :
+                Toast.makeText(getActivity(), "1", Toast.LENGTH_SHORT).show();
+                break;
+            case 2 :
+                Toast.makeText(getActivity(), "2", Toast.LENGTH_SHORT).show();
+                break;
+            case 3 :
+                Toast.makeText(getActivity(), "3", Toast.LENGTH_SHORT).show();
+                break;
+            case 4 :
+                Toast.makeText(getActivity(), "4", Toast.LENGTH_SHORT).show();
+                break;
+            case 5 :
+                Toast.makeText(getActivity(), "5", Toast.LENGTH_SHORT).show();
+                break;
+            case 6 :
+                Toast.makeText(getActivity(), "6", Toast.LENGTH_SHORT).show();
+                break;
+            case 7 :
+                Toast.makeText(getActivity(), "7", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 }
