@@ -21,25 +21,25 @@ public class DataGenerator {
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
                 case 3 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 5 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
             }
             items.add(item);
@@ -59,25 +59,25 @@ public class DataGenerator {
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
                 case 3 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 5 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
             }
             items.add(item);
@@ -97,25 +97,25 @@ public class DataGenerator {
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
                 case 3 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 5 :
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
                     break;
                 case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
                     break;
                 case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
                     break;
             }
             items.add(item);

@@ -28,20 +28,89 @@ public class FragmentResult extends Fragment {
 
 
     public void setIdA(int id_a) {
-        if (id_a == 0) {
-            iv_a.setImageResource(R.drawable.ic_launcher_background);
+        switch (id_a) {
+            case 0 :
+                iv_a.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 1 :
+                iv_a.setImageResource(R.drawable.ic_android);
+                break;
+            case 2 :
+                iv_a.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
+            case 3 :
+                iv_a.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 4 :
+                iv_a.setImageResource(R.drawable.ic_android);
+                break;
+            case 5 :
+                iv_a.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 6 :
+                iv_a.setImageResource(R.drawable.ic_android);
+                break;
+            case 7 :
+                iv_a.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
         }
     }
 
     public void setIdB(int id_b) {
-        if (id_b == 0) {
-            iv_b.setImageResource(R.drawable.ic_launcher_background);
+        switch (id_b) {
+            case 0 :
+                iv_b.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 1 :
+                iv_b.setImageResource(R.drawable.ic_android);
+                break;
+            case 2 :
+                iv_b.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
+            case 3 :
+                iv_b.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 4 :
+                iv_b.setImageResource(R.drawable.ic_android);
+                break;
+            case 5 :
+                iv_b.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 6 :
+                iv_b.setImageResource(R.drawable.ic_android);
+                break;
+            case 7 :
+                iv_b.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
         }
     }
 
     public void setIdC(int id_c) {
-        if (id_c == 0) {
-            iv_c.setImageResource(R.drawable.ic_launcher_background);
+        switch (id_c) {
+            case 0 :
+                iv_c.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 1 :
+                iv_c.setImageResource(R.drawable.ic_android);
+                break;
+            case 2 :
+                iv_c.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
+            case 3 :
+                iv_c.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 4 :
+                iv_c.setImageResource(R.drawable.ic_android);
+                break;
+            case 5 :
+                iv_c.setImageResource(R.drawable.ic_launcher_background);
+                break;
+            case 6 :
+                iv_c.setImageResource(R.drawable.ic_android);
+                break;
+            case 7 :
+                iv_c.setImageResource(R.drawable.ic_baseline_cast_24);
+                break;
         }
     }
 
