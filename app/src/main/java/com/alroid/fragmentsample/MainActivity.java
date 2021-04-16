@@ -1,11 +1,13 @@
 package com.alroid.fragmentsample;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.alroid.fragmentsample.fragment.FragmentA;
+import com.alroid.fragmentsample.fragment.FragmentResult;
 
 public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPassA {
 
@@ -18,5 +20,10 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
     @Override
     public void OnIdPassA(int id) {
         Toast.makeText(this, "id : " + Integer.valueOf(id).toString(), Toast.LENGTH_SHORT).show();
+        //FragmentResult fragmentResult = FragmentResult.newInstance(id);
+
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentResult fragmentResult = (FragmentResult) manager.findFragmentById(R.id.fragment_result);
+        fragmentResult.setIdA(id);
     }
 }

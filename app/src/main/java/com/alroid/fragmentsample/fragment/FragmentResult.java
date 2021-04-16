@@ -1,12 +1,23 @@
 package com.alroid.fragmentsample.fragment;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
 
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import com.alroid.fragmentsample.Const;
+import com.alroid.fragmentsample.R;
 
 public class FragmentResult extends Fragment {
+
+    ImageView iv_a, iv_b, iv_c;
 
     public static FragmentResult newInstance(int id) {
         FragmentResult fragmentResult = new FragmentResult();
@@ -18,4 +29,25 @@ public class FragmentResult extends Fragment {
     }
 
 
+    public void setIdA(int id_a) {
+        if (id_a == 0) {
+            iv_a.setImageResource(R.drawable.ic_launcher_background);
+        }
+    }
+
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_result, null);
+        iv_a = view.findViewById(R.id.iv_a);
+        iv_b = view.findViewById(R.id.iv_b);
+        iv_c = view.findViewById(R.id.iv_c);
+
+        if (getArguments() != null && getArguments().containsKey(Const.KEY_ID)) {
+            int id_a = getArguments().getInt(Const.KEY_ID);
+        }
+
+
+        return view;
+    }
 }
