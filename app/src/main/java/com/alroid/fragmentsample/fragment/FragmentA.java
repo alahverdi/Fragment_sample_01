@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.alroid.fragmentsample.Const;
 import com.alroid.fragmentsample.DataGenerator;
 import com.alroid.fragmentsample.R;
 import com.alroid.fragmentsample.adapter.AdapterItem;
@@ -21,7 +19,19 @@ import com.alroid.fragmentsample.entity.Item;
 
 public class FragmentA extends Fragment implements AdapterItem.selectedItem {
     RecyclerView rv_a;
-    int id = 0;
+
+    public interface OnIdPassA {
+        public void OnIdPassA(int id);
+    }
+
+    OnIdPassA idPasser;
+
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        idPasser = (OnIdPassA) context;
+    }
+
 
     @Nullable
     @Override
@@ -42,7 +52,8 @@ public class FragmentA extends Fragment implements AdapterItem.selectedItem {
 
     @Override
     public void selectedItem(Item item) {
-        id = item.getId();
+        idPasser.OnIdPassA(item.getId());
+
        /* switch (item.getId()) {
             case 0:
                 Toast.makeText(getActivity(), "0", Toast.LENGTH_SHORT).show();
@@ -69,9 +80,5 @@ public class FragmentA extends Fragment implements AdapterItem.selectedItem {
                 Toast.makeText(getActivity(), "7", Toast.LENGTH_SHORT).show();
                 break;
         }*/
-    }
-
-    public int getItemId() {
-        return id;
     }
 }
