@@ -18,6 +18,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             tools:layout="@layout/fragment_a" />
+<!--
 
         <fragment
             android:id="@+id/fragment_b"
@@ -34,8 +35,10 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             tools:layout="@layout/fragment_c" />
+-->
 
     </LinearLayout>
+<!--
 
     <fragment
         android:id="@+id/fragment_result"
@@ -44,5 +47,6 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         tools:layout="@layout/fragment_result" />
+-->
 
 </LinearLayout>
