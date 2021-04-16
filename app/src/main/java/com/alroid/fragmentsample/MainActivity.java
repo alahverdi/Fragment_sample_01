@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
 
     @Override
     public void OnIdPassA(int id) {
-        Toast.makeText(this, "id : " + Integer.valueOf(id).toString(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "id : " + Integer.valueOf(id).toString(), Toast.LENGTH_SHORT).show();
         //FragmentResult fragmentResult = FragmentResult.newInstance(id);
 
         FragmentManager manager = getSupportFragmentManager();

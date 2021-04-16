@@ -10,12 +10,14 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.alroid.fragmentsample.Const;
 import com.alroid.fragmentsample.R;
 
 public class FragmentResult extends Fragment {
 
-    ImageView iv_a, iv_b, iv_c;
+    ImageView iv_b, iv_c;
+    LottieAnimationView iv_a;
 
     public static FragmentResult newInstance(String reset) {
         FragmentResult fragmentResult = new FragmentResult();
@@ -30,7 +32,8 @@ public class FragmentResult extends Fragment {
     public void setIdA(int id_a) {
         switch (id_a) {
             case 0:
-                iv_a.setImageResource(R.drawable.ic_launcher_background);
+                iv_a.setAnimation(R.raw.sample_burger);
+                iv_a.playAnimation();
                 break;
             case 1:
                 iv_a.setImageResource(R.drawable.ic_android);
@@ -115,7 +118,8 @@ public class FragmentResult extends Fragment {
     }
 
     public void resetFragmentResult() {
-        iv_a.setImageResource(R.drawable.ic_launcher_background);
+        iv_a.setAnimation(R.raw.sample_burger);
+        //iv_a.setImageResource(R.drawable.ic_launcher_background);
         iv_b.setImageResource(R.drawable.ic_launcher_background);
         iv_c.setImageResource(R.drawable.ic_launcher_background);
 
