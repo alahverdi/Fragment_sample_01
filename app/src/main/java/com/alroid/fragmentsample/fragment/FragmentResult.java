@@ -20,16 +20,6 @@ public class FragmentResult extends Fragment {
 
     LottieAnimationView iv_a, iv_c, iv_b;
 
-    public static FragmentResult newInstance(String reset) {
-        FragmentResult fragmentResult = new FragmentResult();
-        Bundle bundle = new Bundle();
-        bundle.putString(Const.KEY_RESET, reset);
-
-        fragmentResult.setArguments(bundle);
-
-        return fragmentResult;
-    }
-
     public void setIdA(int id_a) {
         switch (id_a) {
             case 0:
@@ -157,7 +147,17 @@ public class FragmentResult extends Fragment {
         iv_c = view.findViewById(R.id.iv_c);
 
 
-
         return view;
     }
+
+    /*
+    public static FragmentResult newInstance(String reset) {
+        FragmentResult fragmentResult = new FragmentResult();
+        Bundle bundle = new Bundle();
+        bundle.putString(Const.KEY_RESET, reset);
+
+        fragmentResult.setArguments(bundle);
+
+        return fragmentResult;
+    }*/
 }

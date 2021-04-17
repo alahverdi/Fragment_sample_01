@@ -17,22 +17,22 @@ public class DataGenerator {
             Item item = new Item();
             item.setId(i);
             switch (i) {
-                case 0 :
+                case 0:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread1));
                     break;
-                case 1 :
+                case 1:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread2));
                     break;
-                case 2 :
+                case 2:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread3));
                     break;
-                case 3 :
+                case 3:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread1));
                     break;
-                case 4 :
+                case 4:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread2));
                     break;
-                case 5 :
+                case 5:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.bread3));
                     break;
             }
@@ -40,7 +40,6 @@ public class DataGenerator {
         }
         return items;
     }
-
 
     public static List<Item> getItemsB(Context context) {
         List<Item> items = new ArrayList<>();
@@ -49,22 +48,22 @@ public class DataGenerator {
             Item item = new Item();
             item.setId(i);
             switch (i) {
-                case 0 :
+                case 0:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein1));
                     break;
-                case 1 :
+                case 1:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein2));
                     break;
-                case 2 :
+                case 2:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein3));
                     break;
-                case 3 :
+                case 3:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein1));
                     break;
-                case 4 :
+                case 4:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein2));
                     break;
-                case 5 :
+                case 5:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.protein3));
                     break;
             }
@@ -73,7 +72,6 @@ public class DataGenerator {
         return items;
     }
 
-
     public static List<Item> getItemsC(Context context) {
         List<Item> items = new ArrayList<>();
 
@@ -81,22 +79,22 @@ public class DataGenerator {
             Item item = new Item();
             item.setId(i);
             switch (i) {
-                case 0 :
+                case 0:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce1));
                     break;
-                case 1 :
+                case 1:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce2));
                     break;
-                case 2 :
+                case 2:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce3));
                     break;
-                case 3 :
+                case 3:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce1));
                     break;
-                case 4 :
+                case 4:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce2));
                     break;
-                case 5 :
+                case 5:
                     item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce3));
                     break;
             }

@@ -26,7 +26,6 @@ public class AdapterItem extends RecyclerView.Adapter<AdapterItem.ItemsViewHolde
         this.selectedItem = selectedItem;
     }
 
-
     @NonNull
     @Override
     public ItemsViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

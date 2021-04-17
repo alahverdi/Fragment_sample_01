@@ -6,7 +6,6 @@ public class Item {
     private int id;
     private Drawable img;
 
-
     public int getId() {
         return id;
     }

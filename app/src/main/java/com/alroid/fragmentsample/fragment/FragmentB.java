@@ -40,7 +40,6 @@ public class FragmentB extends Fragment implements AdapterItem.selectedItem {
         rv_b = view.findViewById(R.id.rv_b);
         setupRecyclerViewItemsB();
 
-
         return view;
     }
 

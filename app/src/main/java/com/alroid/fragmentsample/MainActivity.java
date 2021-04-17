@@ -15,6 +15,7 @@ import com.alroid.fragmentsample.fragment.FragmentA;
 import com.alroid.fragmentsample.fragment.FragmentB;
 import com.alroid.fragmentsample.fragment.FragmentC;
 import com.alroid.fragmentsample.fragment.FragmentResult;
+import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPassA, FragmentB.OnIdPassB, FragmentC.OnIdPassC {
 
@@ -23,9 +24,11 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // disable dark mode:
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     }
 
+    // send id from FragmentA to FragmentResult:
     @Override
     public void OnIdPassA(int id) {
         FragmentManager manager = getSupportFragmentManager();
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
         }
     }
 
-
+    // send id from FragmentB to FragmentResult:
     @Override
     public void OnIdPassB(int id) {
         FragmentManager manager = getSupportFragmentManager();
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
         }
     }
 
+    // send id from FragmentC to FragmentResult:
     @Override
     public void onIdPassC(int id) {
         FragmentManager manager = getSupportFragmentManager();
@@ -69,8 +73,7 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
                 if (fragmentResult != null) {
                     fragmentResult.resetFragmentResult();
                 }
-
-                Toast msg = Toast.makeText(MainActivity.this, "reset", Toast.LENGTH_LONG);
+                Toast msg = Toast.makeText(MainActivity.this, "reset", Toast.LENGTH_SHORT);
                 msg.show();
                 return true;
             default:
