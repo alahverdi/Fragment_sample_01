@@ -13,33 +13,27 @@ public class DataGenerator {
     public static List<Item> getItemsA(Context context) {
         List<Item> items = new ArrayList<>();
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 6; i++) {
             Item item = new Item();
             item.setId(i);
             switch (i) {
                 case 0 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread1));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread2));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread3));
                     break;
                 case 3 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread1));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread2));
                     break;
                 case 5 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
-                    break;
-                case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
-                    break;
-                case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.bread3));
                     break;
             }
             items.add(item);
@@ -51,33 +45,27 @@ public class DataGenerator {
     public static List<Item> getItemsB(Context context) {
         List<Item> items = new ArrayList<>();
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 6; i++) {
             Item item = new Item();
             item.setId(i);
             switch (i) {
                 case 0 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein1));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein2));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein3));
                     break;
                 case 3 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein1));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein2));
                     break;
                 case 5 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
-                    break;
-                case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
-                    break;
-                case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.protein3));
                     break;
             }
             items.add(item);
@@ -89,33 +77,27 @@ public class DataGenerator {
     public static List<Item> getItemsC(Context context) {
         List<Item> items = new ArrayList<>();
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 6; i++) {
             Item item = new Item();
             item.setId(i);
             switch (i) {
                 case 0 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce1));
                     break;
                 case 1 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce2));
                     break;
                 case 2 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce3));
                     break;
                 case 3 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce1));
                     break;
                 case 4 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce2));
                     break;
                 case 5 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_launcher_background));
-                    break;
-                case 6 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_android));
-                    break;
-                case 7 :
-                    item.setImg(ContextCompat.getDrawable(context, R.drawable.ic_baseline_cast_24));
+                    item.setImg(ContextCompat.getDrawable(context, R.drawable.lettuce3));
                     break;
             }
             items.add(item);
