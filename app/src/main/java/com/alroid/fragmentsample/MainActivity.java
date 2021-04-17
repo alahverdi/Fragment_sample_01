@@ -2,6 +2,7 @@ package com.alroid.fragmentsample;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentManager;
 
 import android.os.Bundle;
@@ -21,13 +22,12 @@ public class MainActivity extends AppCompatActivity implements FragmentA.OnIdPas
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
     }
 
     @Override
     public void OnIdPassA(int id) {
-        //Toast.makeText(this, "id : " + Integer.valueOf(id).toString(), Toast.LENGTH_SHORT).show();
-        //FragmentResult fragmentResult = FragmentResult.newInstance(id);
-
         FragmentManager manager = getSupportFragmentManager();
         FragmentResult fragmentResult = (FragmentResult) manager.findFragmentById(R.id.fragment_result);
         if (fragmentResult != null) {
