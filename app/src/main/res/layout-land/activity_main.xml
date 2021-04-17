@@ -37,7 +37,10 @@
 
     </LinearLayout>
 
-
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
     <fragment
         android:id="@+id/fragment_result"
         android:name="com.alroid.fragmentsample.fragment.FragmentResult"
